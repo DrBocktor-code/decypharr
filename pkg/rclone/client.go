@@ -2,7 +2,6 @@ package rclone
 
 import (
 	"fmt"
-	"os"
 	"os/exec"
 	"strconv"
 	"time"
