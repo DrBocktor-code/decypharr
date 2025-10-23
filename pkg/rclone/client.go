@@ -52,9 +52,6 @@ func (m *Manager) mountWithRetry(mountPath, provider, webdavURL string, maxRetri
 func (m *Manager) performMount(mountPath, provider, webdavURL string) error {
 	cfg := config.Get()
 
-	// Create mount directory
-	if err := os.MkdirAll(mountPath, 0755); err != nil {
-		return fmt.Errorf("failed to create mount directory %s: %w", mountPath, err)
 	}
 
 	// Check if already mounted
